@@ -10,6 +10,6 @@ Weather.prototype.getWeather = function(city) {
   }).fail(function(error) {
     $('.showWeather').text(error.responseJSON.message);
   });
-}
+};
 
 exports.weatherModule = Weather;

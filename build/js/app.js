@@ -29,7 +29,7 @@ var Weather = require('./../js/weather.js').weatherModule;
 
 var displayHumidity = function(city, humidityData) {
   $('.showWeather').text("The humidity in " + city + " is " + humidityData + "%");
-}
+};
 
 $(document).ready(function() {
   var currentWeatherObject = new Weather();
@@ -57,7 +57,7 @@ Weather.prototype.getWeather = function(city) {
   }).fail(function(error) {
     $('.showWeather').text(error.responseJSON.message);
   });
-}
+};
 
 exports.weatherModule = Weather;
 
@@ -93,7 +93,7 @@ var Weather = require('./../js/weather.js').weatherModule;
 
 var displayHumidity = function(city, humidityData) {
   $('.showWeather').text("The humidity in " + city + " is " + humidityData + "%");
-}
+};
 
 $(document).ready(function() {
   var currentWeatherObject = new Weather();
